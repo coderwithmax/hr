@@ -11,5 +11,4 @@ password TEXT,
 role VARCHAR(30),
 
 created_at TIMESTAMP DEFAULT NOW()
-
 );
