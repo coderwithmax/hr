@@ -1,0 +1,155 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.group input,
+.group select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.group input:focus,
+.group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.link {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .group input,
+  .group select {
+    padding: 12px;
+  }
+
+  .button {
+    padding: 13px;
+  }
+}
